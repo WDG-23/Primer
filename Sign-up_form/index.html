@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Schoool Anmeldeformular</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Tritt unserer Coding School bei</h1>
+      <p>Fülle das Formula bitte aus.</p>
+    </header>
+    <!-- Main -->
+
+    <main>
+      <section>
+        <form action="#" method="get" autocomplete="on">
+          <fieldset>
+            <legend>Persönliche Infos</legend>
+            <div>
+              <label for="firstname">Vorname:</label>
+              <br />
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Anna"
+                required
+                autocomplete="given-name"
+              />
+            </div>
+            <div>
+              <label for="lastname">Nachname:</label>
+              <br />
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Müller"
+                required
+                autocomplete="family-name"
+              />
+            </div>
+            <div>
+              <label for="email">E-Mail:</label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="anna.mueller@example.de"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Adress-Infos</legend>
+            <div>
+              <label for="adress">Straße:</label> <br /><input
+                type="text"
+                name="adress"
+                id="adress"
+                placeholder="Musterstraße 123"
+                autocomplete="street-adress"
+              />
+            </div>
+
+            <div>
+              <label for="zipcode">Postleitzahl:</label>
+              <br />
+              <input
+                type="text"
+                name="zipcode"
+                id="zipcode"
+                placeholder="12345"
+                pattern="\d{5}"
+                maxlength="5"
+                autocomplete="postal-code"
+              />
+              <small>5-stellige Postleizahl</small>
+            </div>
+
+            <div>
+              <label for="city">Stadt:</label>
+              <br />
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Berlin"
+                autocomplete="adress-level2"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Dropdown Menu -->
+          <fieldset>
+            <legend>Kurs-Infos</legend>
+            <div>
+              <label for="bootcamp">Bootcamp auswählen:</label>
+              <br />
+              <select name="bootcamp" id="bootcamp">
+                <option value="" disabled selected>
+                  --Bitte wähle eine Option--
+                </option>
+                <option value="web-dev">Web & App Entwicklung</option>
+                <option value="data-sience">Data Science</option>
+                <option value="ux-design">UX/UI Design</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="comments">Zusätzliche Kommentare:</label>
+              <br /><textarea
+                name="comments"
+                id="comments"
+                rows="4"
+                placeholder="Erzähle uns von deinen Zielen und was du erreichen möchtest"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <!-- RADIO BUTTONS!
+            -->
+
+          <fieldset>
+            <legend>Lernpräferenz</legend>
+
+            <p>Wie lernst du am liebsten?</p>
+
+            <!-- p_form/index.html?study-time=morning# -->
+            <div>
+              <input
+                type="radio"
+                name="study-time"
+                id="morning"
+                value="morning"
+                required
+              /><label for="morning"
+                >Morgenmensch (Ich programmiere vor dem Kaffee!)</label
+              >
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="study-time"
+                id="afternoon"
+                value="afternoon"
+                required
+              /><label for="afternoon"
+                >Nachmittags-Performer (Höchste Produktivität nach dem
+                Mittagessen)</label
+              >
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="study-time"
+                id="night"
+                value="night"
+                required
+              /><label for="night"
+                >Nachteule (mein bester Code ensteht nach Mitternacht)</label
+              >
+            </div>
+          </fieldset>
+
+          <!-- AGB Checkbox -->
+          <div>
+            <label>
+              <input type="checkbox" name="terms" required />Ich stimme den
+              <a href="#">Allgemeine Geschäftsbedingungen</a>
+            </label>
+          </div>
+
+          <button type="submit">Bewerbung absenden</button>
+          <button type="reset">Formular löschen</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer><p>© 2025 Coding School. Alle Rechte vorbehalten.</p></footer>
+  </body>
+</html>
