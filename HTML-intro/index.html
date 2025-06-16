@@ -1,15 +1,30 @@
+myParagraph
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first webpage</title>
+
+    <!-- Internal style example -->
+    <style>
+      p {
+        color: orange;
+      }
+    </style>
+
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Welcome to my webpage</h1>
 
     <h2>This is a blog article</h2>
-    <p>This is my awesome blog article</p>
+
+    <!-- Inline style example - overrides both internal and external styles -->
+    <p style="color: red; background-color: yellow">
+      This is my awesome blog article with inline styling!
+    </p>
 
     <h2>About HTML Structure</h2>
     <p>
@@ -21,7 +36,8 @@
     <h3>Sub-chapters go here</h3>
     <p>Headings follow a logical order like chapters in a book.</p>
 
-    <p>
+    <!-- Using a class for custom styling -->
+    <p class="myParagraph">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis
       eget urna ultrices maximus. Sed vehicula, nisi in placerat feugiat, odio
       magna facilisis nulla, in ultricies quam eros ac erat. Quisque consequat,
@@ -36,11 +52,17 @@
       important information.
     </p>
 
+    <!-- Special paragraph with extra spacing -->
+    <p class="mySpecialParagraph">
+      This paragraph has special spacing applied through a class.
+    </p>
+
     <div>
       <h2>Content inside a div</h2>
-      <p>
+      <p class="myParagraph">
         This entire section is wrapped in a div element, which is a block
-        container used to group elements.
+        container used to group elements. This paragraph also uses the
+        myParagraph class.
       </p>
       <p>Divs are very useful for organizing and styling content.</p>
     </div>

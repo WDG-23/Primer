@@ -1,0 +1,22 @@
+/* External stylesheet */
+
+/* Element selector - styling all paragraphs */
+p {
+  color: red;
+}
+
+/* Class selector - reusable styling for specific elements */
+.myParagraph {
+  color: blue;
+  font-family: Verdana;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+/* Special paragraph with extra margin */
+.mySpecialParagraph {
+  margin-block: 60px;
+  color: purple;
+  border: 1px solid grey;
+  padding: 10px;
+}
